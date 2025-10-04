@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 3,
+  "final_space": true,
   "blocks": [
     {
       "type": "prompt",
@@ -10,48 +11,39 @@
           "type": "session",
           "style": "plain",
           "foreground": "#FF00FF",
-          "properties": {
-            "template": "🥹🤭<#FF8000> Mrrr! Wat shouwd I dwo nwext?:333 ...</>{{ .UserName }} "
-          }
+          "template": "🥹🤭<#FF8000> Mrrr! Wat shouwd I dwo nwext?:333 ...</>{{ .UserName }} "
         },
         {
           "type": "path",
           "style": "plain",
           "foreground": "#FF70A6",
-          "properties": {
-            "template": "{{ .Path }} "
-          }
+          "template": "{{ .Path }} "
         }
       ]
     },
     {
-      "type": "prompt",
-      "alignment": "right",
+      "type": "rprompt",
       "segments": [
         {
-          "type": "memory",
+          "type": "sysinfo",
           "style": "plain",
           "foreground": "#DA70D6",
-          "properties": {
-            "template": "mrrraw... sowwy my owneeeew... for being such a greedy kitty >w< i ate {{ .PhysicalMemoryUsed }} of {{ .PhysicalMemoryTotal }} wam... f-forgive me? 👉👈 🥺"
-          }
+          "template": "mrrraw... sowwy my owneeeew... for being such a greedy kitty >w< i ate {{ round .PhysicalPercentUsed .Precision }}% wam... f-forgive me? 👉👈 🥺"
         }
       ]
     },
     {
       "type": "prompt",
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
           "type": "text",
           "style": "plain",
           "foreground": "#FF9EDB",
-          "properties": {
-            "template": " ~>w<~ pwease notice me! 👉👈"
-          }
+          "template": " ~>w<~ pwease notice me! 👉👈 "
         }
       ]
     }
-  ],
-  "final_space": true
+  ]
 }
