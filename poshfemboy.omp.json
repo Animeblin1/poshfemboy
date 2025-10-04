@@ -9,14 +9,13 @@
         {
           "type": "session",
           "style": "plain",
-          "template": "🥹🤭<#FF8000> Mrrr! Wat shouwd I dwo nwext?:333 ...</>",
           "foreground": "#FF00FF",
           "properties": {
-            "template": "{{ .UserName }} "
+            "template": "🥹🤭<#FF8000> Mrrr! Wat shouwd I dwo nwext?:333 ...</>{{ .UserName }} "
           }
         },
         {
-          "type": "path", 
+          "type": "path",
           "style": "plain",
           "foreground": "#FF70A6",
           "properties": {
@@ -26,7 +25,21 @@
       ]
     },
     {
-      "type": "prompt", 
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#DA70D6",
+          "properties": {
+            "template": "mrrraw... sowwy for being such a greedy kitty >w< i ate {{ .PhysicalMemoryUsed }} of {{ .PhysicalMemoryTotal }} wam... f-forgive me? 👉👈 🥺"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
@@ -34,7 +47,7 @@
           "style": "plain",
           "foreground": "#FF9EDB",
           "properties": {
-            "template":  " ~>w<~ pwease notice me! 👉👈",
+            "template": " ~>w<~ pwease notice me! 👉👈"
           }
         }
       ]
