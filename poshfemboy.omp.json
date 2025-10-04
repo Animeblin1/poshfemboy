@@ -29,11 +29,11 @@
       "alignment": "right",
       "segments": [
         {
-          "type": "text",
+          "type": "memory",
           "style": "plain",
           "foreground": "#DA70D6",
           "properties": {
-            "template": "mrrraw... sowwy for being such a greedy kitty >w< i ate {{ .PhysicalMemoryUsed }} of {{ .PhysicalMemoryTotal }} wam... f-forgive me? 👉👈 🥺"
+            "template": "mrrraw... sowwy my owneeeew... for being such a greedy kitty >w< i ate {{ .PhysicalMemoryUsed }} of {{ .PhysicalMemoryTotal }} wam... f-forgive me? 👉👈 🥺"
           }
         }
       ]
