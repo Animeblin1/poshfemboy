@@ -47,21 +47,21 @@
             "{{ if gt .Ahead 0 }}#D81E5B{{ end }}"
           ],
           "properties": {
-            "branch_ahead_icon": "\u2191 ",
-            "branch_behind_icon": "\u2193 ",
-            "branch_gone_icon": "\u2196 ",
+            "branch_ahead_icon": "🌟↑ ",
+            "branch_behind_icon": "🌙↓ ",
+            "branch_gone_icon": "💨↖ ",
             "branch_icon": "\ue0a0 ",
-            "branch_identical_icon": "\u2261 ",
-            "commit_icon": "\uE729 ",
+            "branch_identical_icon": "✨≡ ",
+            "commit_icon": "📝",
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "github_icon": "\uf408 ",
-            "no_commits_icon": "\uE728 ",
-            "rebase_icon": "\uE726 ",
-            "stash_count_icon": "\uF692 ",
-            "tag_icon": "\uE9F5 ",
-            "template": "gitty~ {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }} nya~ {{ end }}{{ if .Working.Changed }} \uF044 {{ .Working.String }} oopsie! {{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }} hehe~ {{ end }}{{ if gt .StashCount 0}} \uF692 {{ .StashCount }} stashes~ 💦 {{ end }}"
+            "github_icon": "🐙 ",
+            "no_commits_icon": "❌",
+            "rebase_icon": "🔀 ",
+            "stash_count_icon": "💾 ",
+            "tag_icon": "🏷️ ",
+            "template": "gitty~ {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }} nya~ {{ end }}{{ if .Working.Changed }} ✨{{ .Working.String }} oopsie! ✨{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }} hehe~ 💖{{ end }}{{ if gt .StashCount 0}} 💦{{ .StashCount }} stashes~ 💦{{ end }}"
           }
         }
       ]
@@ -77,6 +77,21 @@
           "foreground": "#FF70A6",
           "properties": {
             "text": "🥺 ~>w<~ pwease type! 💕"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": false,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FF9EDB",
+          "properties": {
+            "text": "〜 type for me, daddy 〜 UwU → "
           }
         }
       ]
