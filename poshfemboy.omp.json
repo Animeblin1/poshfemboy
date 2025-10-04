@@ -5,82 +5,39 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
-        {
-          "type": "os",
-          "style": "plain",
-          "foreground": "#FF00FF",
-          "properties": {
-            "template": "nya~ {{ if .WSL }}WSL cutie 🐱 {{ end }}{{ .Icon }} UwU ",
-            "mapped_icons": {
-              "windows": "\uE62A",
-              "linux": "\uF17C",
-              "darwin": "\uF179"
-            }
-          }
-        },
         {
           "type": "session",
           "style": "plain",
           "foreground": "#FF00FF",
           "properties": {
-            "template": "hiii~ {{ .UserName }}-chan 💕"
+            "template": "{{ .UserName }} "
           }
         },
         {
-          "type": "path",
+          "type": "path", 
           "style": "plain",
           "foreground": "#FF70A6",
           "properties": {
-            "folder_icon": "📁 ",
-            "home_icon": "~",
-            "template": "{{ .Path }}"
-          }
-        },
-        {
-          "type": "git",
-          "style": "plain",
-          "foreground": "#FF70A6",
-          "properties": {
-            "branch_icon": " ",
-            "branch_ahead_icon": "🌟↑",
-            "branch_behind_icon": "🌙↓",
-            "stash_count_icon": "💦",
-            "template": "{{ .HEAD }}{{ if .Working.Changed }} ✨{{ .Working.String }}{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} 💦{{ .StashCount }}{{ end }}"
+            "template": "{{ .Path }} "
           }
         }
       ]
     },
     {
-      "type": "prompt",
-      "alignment": "right",
-      "segments": [
-        {
-          "type": "sysinfo",
-          "style": "diamond",
-          "properties": {
-            "template": "CPU: {{ .CPUPercent }}% {{ .CPULoadBar | repeat 10 '█' '-' | gradient '#BC93FF' '#FF70A6' }} | MEM: {{ round .PhysicalPercentUsed 0 }}% {{ .MemBar | repeat 10 '█' '-' | gradient '#BC93FF' '#FF70A6' }} ({{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB)"
-          }
-        }
-      ]
-    },
-    {
-      "type": "prompt",
+      "type": "prompt", 
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
           "type": "text",
           "style": "plain",
           "foreground": "#FF9EDB",
           "properties": {
-            "text": "{{ rand (slice \" >⩊<\" \"(˶˃ ᵕ ˂˶)\" \"ฅ^>⩊<^ฅ\" \"(,,>﹏<,,)👉👈\" \"•⩊•\" \"≽^•⩊•^≼\" \"(˶˃⤙˂˶)\") }} {{ rand (slice \"pwease notice me!..\" \"oopsie-whoopsie~\" \"i smol and weak\" \"no wories!\" \"hewe we go again\" \"a widdle bit lost\" \"so pwetty!\" \"mrrp~ 😽\") }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\" \"🐇\" \"🦋\" \"🍑\") }}"
+            "text": "{{ rand (slice \"nya~\" \"uwu\" \"👉👈\" \"🌸\" \"💖\") }} "
           }
         }
       ]
     }
   ],
-  "console_title_template": "nyaa~ {{ .Shell }} in {{ .Folder }} cutie! 🌸",
   "final_space": true
 }
