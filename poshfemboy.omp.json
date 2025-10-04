@@ -11,7 +11,7 @@
           "type": "session",
           "style": "plain",
           "foreground": "#DA70D6",
-          "template": "🥹🤭<#FF8000> Mrrr! Wat shouwd I dwo nwext?:333 ...</>{{ .UserName }} "
+          "template": "🥹🤭 Mrrr! Wat shouwd I dwo nwext?:333 ... 🥺💜 haii {{ .UserName }}-chan~ "
         },
         {
           "type": "path",
@@ -25,10 +25,10 @@
       "type": "rprompt",
       "segments": [
         {
-          "type": "sysinfo",
+          "type": "text",
           "style": "plain",
           "foreground": "#DA70D6",
-          "template": "mrrraw... sowwy my owneeeew... for being such a greedy kitty >w< i ate {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB wam... f-forgive me? 👉👈 🥺"
+          "template": "mrrraw~ >w< 👉👈 🥺"
         }
       ]
     },
