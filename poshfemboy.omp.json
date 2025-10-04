@@ -25,18 +25,17 @@
           "style": "plain",
           "foreground": "#FF00FF",
           "properties": {
-            "template": "hiii~ {{ .UserName }}-chan 💕 {{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
+            "template": "hiii~ {{ .UserName }}-chan 💕"
           }
         },
         {
           "type": "path",
-          "style": "agnoster_short",
+          "style": "plain",
           "foreground": "#FF70A6",
           "properties": {
-            "folder_icon": "\uE5FF ",
-            "folder_separator_icon": " \ue0b1 ",
+            "folder_icon": "📁 ",
             "home_icon": "~",
-            "template": "smol path~ {{ .Path }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\") }} {{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
+            "template": "{{ .Path }}"
           }
         },
         {
@@ -44,11 +43,11 @@
           "style": "plain",
           "foreground": "#FF70A6",
           "properties": {
-            "branch_icon": "\ue0a0 ",
-            "branch_ahead_icon": "🌟↑ ",
-            "branch_behind_icon": "🌙↓ ",
-            "stash_count_icon": "💦 ",
-            "template": "gitty~ {{ .HEAD }}{{ if .Working.Changed }} ✨{{ .Working.String }} ✨{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }}💖{{ end }}{{ if gt .StashCount 0 }} 💦{{ .StashCount }} stashes~ 💦{{ end }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\") }} {{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
+            "branch_icon": " ",
+            "branch_ahead_icon": "🌟↑",
+            "branch_behind_icon": "🌙↓",
+            "stash_count_icon": "💦",
+            "template": "{{ .HEAD }}{{ if .Working.Changed }} ✨{{ .Working.String }}{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} 💦{{ .StashCount }}{{ end }}"
           }
         }
       ]
@@ -76,7 +75,7 @@
           "style": "plain",
           "foreground": "#FF9EDB",
           "properties": {
-            "text": "{{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
+            "text": "{{ rand (slice \" >⩊<\" \"(˶˃ ᵕ ˂˶)\" \"ฅ^>⩊<^ฅ\" \"(,,>﹏<,,)👉👈\" \"•⩊•\" \"≽^•⩊•^≼\" \"(˶˃⤙˂˶)\") }} {{ rand (slice \"pwease notice me!..\" \"oopsie-whoopsie~\" \"i smol and weak\" \"no wories!\" \"hewe we go again\" \"a widdle bit lost\" \"so pwetty!\" \"mrrp~ 😽\") }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\" \"🐇\" \"🦋\" \"🍑\") }}"
           }
         }
       ]
