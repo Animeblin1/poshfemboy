@@ -25,7 +25,7 @@
           "style": "plain",
           "foreground": "#FF00FF",
           "properties": {
-            "template": "hiii~ {{ .UserName }}-chan 💕 pwease notice me! 👉👈 "
+            "template": "hiii~ {{ .UserName }}-chan 💕 {{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
           }
         },
         {
@@ -36,7 +36,7 @@
             "folder_icon": "\uE5FF ",
             "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
-            "template": "smol path~ {{ .Path }} 🌸 ehehe~ "
+            "template": "smol path~ {{ .Path }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\") }} {{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
           }
         },
         {
@@ -48,7 +48,7 @@
             "branch_ahead_icon": "🌟↑ ",
             "branch_behind_icon": "🌙↓ ",
             "stash_count_icon": "💦 ",
-            "template": "gitty~ {{ .HEAD }}{{ if .Working.Changed }} ✨{{ .Working.String }} ✨{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }}💖{{ end }}{{ if gt .StashCount 0 }} 💦{{ .StashCount }} stashes~ 💦{{ end }}"
+            "template": "gitty~ {{ .HEAD }}{{ if .Working.Changed }} ✨{{ .Working.String }} ✨{{ end }}{{ if .Staging.Changed }} 💖{{ .Staging.String }}💖{{ end }}{{ if gt .StashCount 0 }} 💦{{ .StashCount }} stashes~ 💦{{ end }} {{ rand (slice \"🌸\" \"✨\" \"💫\" \"🍥\" \"💖\" \"💜\" \"🌟\" \"🌙\" \"💌\" \"🍭\" \"🎀\") }}"
           }
         }
       ]
@@ -76,7 +76,7 @@
           "style": "plain",
           "foreground": "#FF9EDB",
           "properties": {
-            "text": "〜 type for me, daddy 〜 UwU → "
+            "text": "{{ rand (slice \"〜 type for me, daddy 〜 UwU →\" \"〜 type for me, daddy 〜 UwU →\" \"pwease notice me! 👉👈\" \"nya~ UwU nya~\" \"o///o pwetty pls type~\" \"😳 ~>w<~ pwease type! 💕\" \"femboy vibes activated~ 💖\" \"✨ sparkly uwu energy ✨\") }}"
           }
         }
       ]
